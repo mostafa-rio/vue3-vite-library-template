@@ -1,11 +1,10 @@
 <template>
     <div>
-       <ButtonComponent></ButtonComponent>
+helooofdsfdsfdsdsadas
     </div>
 </template>
 
-<script lang="ts">
-import ButtonComponent from './ButtonComponent.vue';
+<script>
     export default {
         
     }

@@ -3,9 +3,21 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/myVuePackge.esm.cjs",
+  "module": "./dist/myVuePackge.js",
+  "exports": {
+    ".": {
+      "import": "./dist/myVuePackge.js",
+      "require": "./dist/myVuePackge.esm.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build ",
+    "run-example": "cd src/example && vite",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -14,6 +26,7 @@
     "vue": "^3.4.4"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@storybook/addon-essentials": "^7.6.7",
     "@storybook/addon-interactions": "^7.6.7",
     "@storybook/addon-links": "^7.6.7",
@@ -24,10 +37,15 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.6.7",
-    "typescript": "^5.2.2",
+    "typescript": "^5.3.3",
     "vite": "^5.0.8"
   },
   "dependencies": {
-    "@vitejs/plugin-vue": "^5.0.2"
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@vitejs/plugin-vue": "^5.0.2",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "vite-plugin-css-injected-by-js": "^3.3.1",
+    "vite-plugin-dts": "^3.7.0"
   }
 }

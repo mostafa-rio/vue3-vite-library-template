@@ -16,8 +16,16 @@
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
+    "outDir": "dist",
+    "declaration": true,
+    "declarationDir": "dist",
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"],
+  "exclude": ["src/stories", "node_modules", "src/example"]
 }
