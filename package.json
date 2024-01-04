@@ -1,19 +1,34 @@
 {
   "name": "vue-plugin-template",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/myVuePackge.esm.cjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mostafa-rio/vue3-vite-library-template.git"
+  },
+  "main": "./dist/myVuePackge.cjs",
   "module": "./dist/myVuePackge.js",
   "exports": {
     ".": {
       "import": "./dist/myVuePackge.js",
       "require": "./dist/myVuePackge.esm.cjs"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   },
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "vue3-plugin",
+    "vue3",
+    "vite-config",
+    "vite-"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build ",
@@ -38,9 +53,7 @@
     "react-dom": "^18.2.0",
     "storybook": "^7.6.7",
     "typescript": "^5.3.3",
-    "vite": "^5.0.8"
-  },
-  "dependencies": {
+    "vite": "^5.0.8",
     "@rollup/plugin-typescript": "^11.1.5",
     "@vitejs/plugin-vue": "^5.0.2",
     "rollup-plugin-dts": "^6.1.0",
