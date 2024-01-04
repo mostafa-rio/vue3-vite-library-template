@@ -1,0 +1,1 @@
+export {default as MyVuePackage} from './MyVuePackageComponent.vue
