@@ -13,6 +13,6 @@ Vitest and @vue/test-utils are configured by default. All of the test files with
 
 
 ### Build 
-You can build your library using `npm run build` command. A `dist` folder will be created in the root directory containing the `ESM` and `CJS` files. All of the declration file will be automatically generated inside that folder.
+You can build your library using `npm run build` command. A `dist` folder will be created in the root directory containing the `ESM` and `CJS` files. All of the declration files will be automatically generated inside that folder.
 
  
