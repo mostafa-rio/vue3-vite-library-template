@@ -1,0 +1,20 @@
+# Vite config for Vue package development
+This project is a ready to use solution for developers who are going to develop vue3 libraries and publish on npm
+
+### Develop using Storybook
+You can use Storybook to develop your components and functionalities in a organazed way. You just need to run `npm run storybook` to run the Storybook dev server.
+
+### Example project 
+Test on real project before publish using a ready Vue3 project inside the 'src/example' folder. 
+Build your library using build command then directly import the developed package from the `dist` folder into the example vue project and run `npm run run-example` to start the development project. You can now see your package serving in a real Vue app. 
+
+### Vitest unit testing
+All of the test files with `.test.ts` extension in the `src/tests` folder are automatically detected by Vitest. Simpley run `npm run test-unit` to run the unit tests.
+
+
+### Build 
+You can build your library using `npm run build` command. A `dist` folder will be created in the root directory containing the `ESM` and `CJS` files. All of the declration file will be automatically generated inside that folder.
+
+
+
+ 

@@ -5,7 +5,12 @@
     "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
-
+    "types": [
+      "vitest/importMeta"
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+    },
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -20,7 +25,7 @@
     "declaration": true,
     "declarationDir": "dist",
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
   },
   "include": [
     "src/**/*.ts",
